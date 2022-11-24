@@ -1,0 +1,11 @@
+clear;close all;clc;
+N=1000;
+fs=100;
+f=5;
+n=0:N-1;
+sig=cos(2*pi*f*n/fs);
+fft_sig = fft(sig);
+amp_sig=20*log10(abs(fft_sig)/(N/2));
+F = fs/2*linspace(0,1,N/2+1);
+figure;
+plot(F,amp_sig(1:N/2+1));grid on;title('Spectrum');
