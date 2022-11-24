@@ -1,0 +1,6 @@
+clear;close all;clc;
+T = readtalbe('iladata.csv','Rang','D3:G1026');
+sig1=T.Var1;
+sig2=T.Var2;
+sig3=T.Var3;
+sig4=T.var4;%and so on;
